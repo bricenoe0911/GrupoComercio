@@ -1,0 +1,11 @@
+C:\Proyectos\MetricaAndina\ParteI\PruebaBuild\PruebaBuild\bin\Debug\PruebaBuild.exe.config
+C:\Proyectos\MetricaAndina\ParteI\PruebaBuild\PruebaBuild\bin\Debug\PruebaBuild.exe
+C:\Proyectos\MetricaAndina\ParteI\PruebaBuild\PruebaBuild\bin\Debug\PruebaBuild.pdb
+C:\Proyectos\MetricaAndina\ParteI\PruebaBuild\PruebaBuild\obj\Debug\PruebaBuild.exe
+C:\Proyectos\MetricaAndina\ParteI\PruebaBuild\PruebaBuild\obj\Debug\PruebaBuild.pdb
+C:\Proyectos\GrupoComercio\ParteI\PruebaBuild\PruebaBuild\bin\Debug\PruebaBuild.exe.config
+C:\Proyectos\GrupoComercio\ParteI\PruebaBuild\PruebaBuild\obj\Debug\PruebaBuild.exe
+C:\Proyectos\GrupoComercio\ParteI\PruebaBuild\PruebaBuild\obj\Debug\PruebaBuild.pdb
+C:\Proyectos\GrupoComercio\GrupoComercio\ParteI\PruebaBuild\PruebaBuild\bin\Debug\PruebaBuild.exe.config
+C:\Proyectos\GrupoComercio\GrupoComercio\ParteI\PruebaBuild\PruebaBuild\obj\Debug\PruebaBuild.exe
+C:\Proyectos\GrupoComercio\GrupoComercio\ParteI\PruebaBuild\PruebaBuild\obj\Debug\PruebaBuild.pdb
