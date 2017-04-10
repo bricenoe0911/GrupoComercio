@@ -1,0 +1,24 @@
+﻿@model WebBancoSucursales.ViewModels.SucursalVM
+@{
+    ViewBag.Title = "Sucursal";
+}
+
+@using (Html.BeginForm("AdministrarSucursal", "Banco", FormMethod.Post))
+{
+    <div>
+        @Html.HiddenFor(m => m.IdSucursal)
+    </div>
+    <div>
+        @Html.HiddenFor(m => m.IdBanco)
+    </div>
+    <div>Nombre</div>
+    <div>@Html.TextBoxFor(m => m.Nombre)</div>
+    <div>Direccion</div>
+    <div>@Html.TextBoxFor(m => m.Direccion)</div>
+    <div>Fecha Registro</div>
+    <div>@(Model.FechaRegistro.HasValue ? Model.FechaRegistro.Value.ToShortDateString() : string.Empty)</div>
+    <div>
+        <input type="submit" value="Guardar" />
+    </div>
+}
+

@@ -1,13 +1,4 @@
-﻿@model List<WebBancoSucursales.ViewModels.BancoVM>
-@{
-    ViewBag.Title = "Bancos";
-}
-
-<div>
-    @Html.ActionLink("Nuevo", "Administrar", "Banco")
-</div>
-<div style="height:40px">
-</div>
+﻿@model List<WebBancoSucursales.ViewModels.SucursalVM>
 <div>
     <table>
         <thead>
@@ -38,8 +29,7 @@
                             @(item.FechaRegistro.HasValue ? item.FechaRegistro.Value.ToShortDateString() : string.Empty)
                         </td>
                         <td>
-                            @Html.ActionLink("Editar", "Administrar", "Banco", new { idBanco = item.IdBanco.Value }, null)
-                            @Html.ActionLink("Eliminar", "Eliminar", "Banco", new { id = item.IdBanco.Value }, null)
+                            @Html.ActionLink("Editar", "Administrar", "Banco", new { idSucursal = item.IdSucursal.Value }, null)
                         </td>
                     </tr>
                 }

@@ -1,10 +1,9 @@
-﻿@model List<WebBancoSucursales.ViewModels.BancoVM>
-@{
-    ViewBag.Title = "Bancos";
-}
-
+﻿@model WebBancoSucursales.ViewModels.BancoVM
 <div>
-    @Html.ActionLink("Nuevo", "Administrar", "Banco")
+    @Html.ActionLink("Nuevo", "AdministrarSucursal", "Banco", new { idBanco = Model.IdBanco }, null)
+</div>
+<div>
+    <input type="hidden" value="@Model.IdBanco" />
 </div>
 <div style="height:40px">
 </div>
@@ -19,14 +18,14 @@
                 <th></th>
             </tr>
         </thead>
-        @if (Model != null && Model.Count > 0)
+        @if (Model.Sucursales != null && Model.Sucursales.Count > 0)
         {
             <tbody>
-                @foreach (var item in Model)
+                @foreach (var item in Model.Sucursales)
                 {
                     <tr>
                         <td>
-                            @item.IdBanco
+                            @item.IdSucursal.Value
                         </td>
                         <td>
                             @item.Nombre
@@ -38,8 +37,7 @@
                             @(item.FechaRegistro.HasValue ? item.FechaRegistro.Value.ToShortDateString() : string.Empty)
                         </td>
                         <td>
-                            @Html.ActionLink("Editar", "Administrar", "Banco", new { idBanco = item.IdBanco.Value }, null)
-                            @Html.ActionLink("Eliminar", "Eliminar", "Banco", new { id = item.IdBanco.Value }, null)
+                            @Html.ActionLink("Editar", "AdministrarSucursal", "Banco", new { idSucursal = item.IdSucursal.Value }, null)
                         </td>
                     </tr>
                 }

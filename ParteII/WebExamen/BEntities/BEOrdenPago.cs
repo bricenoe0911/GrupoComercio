@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BEntities
+{
+    public class BEOrdenPago
+    {
+        public int IdOrdenPago { get; set; }
+        public int IdSucursal { get; set; }
+        public decimal Monto { get; set; }
+        public string Moneda { get; set; }
+        public int IdEstado { get; set; }
+        public string Estado { get; set; }
+        public DateTime FechaPago { get; set; }
+        public int IdBanco { get; set; }
+        public string Banco { get; set; }
+        public string Sucursal { get; set; }
+    }
+}

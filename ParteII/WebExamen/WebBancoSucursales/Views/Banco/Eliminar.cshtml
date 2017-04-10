@@ -1,0 +1,20 @@
+﻿@model WebBancoSucursales.ViewModels.BancoVM
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+@using (Html.BeginForm("EliminarBanco", "Banco", FormMethod.Post))
+{
+    <div>
+        @Html.HiddenFor(m => m.IdBanco)
+    </div>
+    <div>Nombre</div>
+    <div>@Html.TextBoxFor(m => m.Nombre, new { @readonly = "readonly" })</div>
+    <div>Direccion</div>
+    <div>@Html.TextBoxFor(m => m.Direccion, new { @readonly = "readonly" })</div>
+    <div>Fecha Registro</div>
+    <div>@(Model.FechaRegistro.HasValue ? Model.FechaRegistro.Value.ToShortDateString() : string.Empty)</div>
+    <div>
+        <input type="submit" value="Eliminar" />
+    </div>
+}

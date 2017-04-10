@@ -113,6 +113,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BancoVM.cs" />
+    <Compile Include="ViewModels\OrdenPagoVM.cs" />
+    <Compile Include="ViewModels\SucursalVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -137,6 +140,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Banco\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEntities\BEntities.csproj">
+      <Project>{a5beef81-a10c-4328-bcc2-d2b261c40600}</Project>
+      <Name>BEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLogic\BLogic.csproj">
+      <Project>{bd1c2235-afc4-427d-8bb1-c0fe5f365f6b}</Project>
+      <Name>BLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banco\Administrar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banco\Eliminar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banco\_AdministrarSucursal.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banco\AdministrarSucursal.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banco\ListaSucursal.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
